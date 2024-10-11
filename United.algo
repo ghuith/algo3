@@ -1,0 +1,41 @@
+ALGORITHM PRODUCT
+VAR
+v1, v2: array of integers
+    n: integer 
+    ps: integer
+    procedure dot_product(v1: array of integers, v2: array of integers): integer
+
+
+
+BEGIN
+       ps := 0
+    for i := 0 to n - 1 do
+        ps := ps + (v1[i] * v2[i])
+    end for
+    return ps
+
+
+
+END
+
+
+BEGIN
+
+ 
+    v1 := [1, 2, 3]
+    v2 := [4, -8, 6]
+    n := length(v1)
+
+    ps := dot_product(v1, v2)
+
+    if ps = 0 then
+        print("The vectors are orthogonal.")
+    else
+        print("The vectors are not orthogonal.")
+
+
+
+    END if
+
+    END
+

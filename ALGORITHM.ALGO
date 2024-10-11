@@ -1,0 +1,31 @@
+
+ALGORITHM array
+VAR
+    set1: array of integers = [3, 1, 7, 9]
+    set2: array of integers = [2, 4, 1, 9, 3]
+    distinct_elements: set of integers
+    sum: integer
+BEGIN
+ distinct_elements := {} 
+
+
+
+
+    for each element in set1 do
+        distinct_elements := distinct_elements union {element}
+    end for
+
+    for each element in set2 do
+        distinct_elements := distinct_elements union {element}
+    end for
+
+    sum := 0
+    for each element in distinct_elements do
+        sum := sum + element
+    end for
+
+    print("Sum of all distinct elements:", sum)
+
+
+    
+    END
